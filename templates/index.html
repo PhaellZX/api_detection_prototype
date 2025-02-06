@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações Automáticas</title>
+</head>
+<body>
+    <h1>Anotações Automáticas com YOLO</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="files">Envie suas imagens:</label><br>
+        <input type="file" id="files" name="files" multiple required><br><br>
+
+        <label for="classes">Selecione as classes:</label><br>
+        <input type="checkbox" id="cat" name="classes" value="cat"> Gato<br>
+        <input type="checkbox" id="dog" name="classes" value="dog"> Cachorro<br>
+        <!-- Adicione mais classes conforme necessário -->
+        <br><br>
+
+        <button type="submit">Iniciar Anotações</button>
+    </form>
+
+    <h2>Exportar Anotações</h2>
+    <a href="/export_separate_jsons"><button>Exportar JSONs Separados</button></a>
+    <a href="/export_consolidated_json"><button>Exportar JSON Consolidado</button></a>
+
+    <h2>Limpar Cache</h2>
+    <!-- Botão para limpar o cache -->
+    <a href="/clear_cache"><button>Limpar Cache</button></a>
+
+    <!-- Exibe a mensagem de sucesso, se houver -->
+
+    <h2>Resultado</h2>
+    <div id="message">{{ message|safe }}</div>
+    
+    {% if labeled_image %}
+        <h3>Imagens Anotadas</h3>
+        <img src="data:image/png;base64,{{ labeled_image }}" alt="Imagens Anotadas">
+    {% endif %}
+</body>
+</html>
