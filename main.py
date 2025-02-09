@@ -127,8 +127,8 @@ def generate_labeled_images():
                         class_name = value['rectanglelabels'][0]
 
                         # Desenha o retângulo e o nome da classe na imagem
-                        cv2.rectangle(image, (x, y), (x + width, y + height), (255, 0, 0), 2)
-                        cv2.putText(image, class_name, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+                        cv2.rectangle(image, (x, y), (x + width, y + height), (0, 255, 0), 2)
+                        cv2.putText(image, class_name, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
             
             # Exibe a imagem anotada
             axes[i].imshow(image)
@@ -160,7 +160,7 @@ async def upload_images(request: Request, files: List[UploadFile] = File(...), c
         detect_and_save_annotations(local_image_path, output_json_path, classes)
     
     labeled_image = generate_labeled_images()
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e anotações salvas", "labeled_image": labeled_image})
+    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e rotulagens salvas", "labeled_image": labeled_image})
 
 # Rota para exportar JSONs separados
 @app.get("/export_separate_jsons")
