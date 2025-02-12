@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotações Automáticas</title>
+    <title>YOPA - YOLO Pré-Anotações</title>
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', path='/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- CSS Personalizado -->
     <link href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="{{ url_for('static', path='/css/jquery.fancybox.min.css') }}" />
-</head>
+    <!-- Link para o Favicon -->
+    <link rel="icon" href="{{ url_for('static', path='/images/logo.png') }}" type="image/x-icon">
 <body>
     <div class="container">
-        <h1>YOPA</h1>
+        <img src="/static/images/logo.png" width="100">
         <p>versão: 1.0.1</p>
-        <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return handleSubmit()">
             <label for="files"><Strong>Envie seus Datasets e Selecione as classes</Strong></label><br>
             <input type="file" id="files" name="files" multiple required><br>
 
             <!-- Mensagem de erro de validação -->
             <div id="error-message" class="text-danger mb-3" style="display: none;">
-            Por favor, selecione pelo menos uma classe antes de continuar.
+                Por favor, selecione pelo menos uma classe antes de continuar.
             </div>
-        
+
             <div id="message"><h3>{{ message|safe }}</h3></div>
 
             {% if labeled_image %}
@@ -40,7 +41,11 @@
             </div>
             {% endif %}
 
-            <button type="submit" class="btn btn-primary">Iniciar Rotulagem</button>
+            <!-- Botão de envio com spinner -->
+            <button type="submit" class="btn btn-primary" id="submit-button">
+                <span id="submit-text">Iniciar Rotulagem</span>
+                <span id="loading-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+            </button>
 
             <div class="checkbox-container">
                 <!-- Exemplo de toggle button para cada checkbox -->
@@ -60,14 +65,15 @@
                 {% for class in classes %}
                 <input type="checkbox" class="btn-check" id="{{ class }}" name="classes" value="{{ class }}" autocomplete="off">
                 <label class="btn btn-outline-primary mb-2" for="{{ class }}">{{ class|replace('_', ' ')|title }}</label>
-            {% endfor %}
+                {% endfor %}
             </div>
         </form>
-        </div>
-    <!-- Bootstrap JS -->
-    <script src="{{ url_for('static', path='/js/bootstrap.bundle.min.js') }}"></script>
+    </div>
+
     <!-- jQuery -->
     <script src="{{ url_for('static', path='/js/jquery.min.js') }}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{ url_for('static', path='/js/bootstrap.bundle.min.js') }}"></script>
     <!-- Fancybox JS -->
     <script src="{{ url_for('static', path='/js/jquery.fancybox.min.js') }}"></script>
     <!-- Scripts JS -->

@@ -8,37 +8,48 @@
 /* Estilo global do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Cor de fundo de fallback */
+    background-image: url('/static/images/background.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Fixa a imagem ao fundo */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
     padding: 20px;
+    margin: 0; /* Remove margens padrão */
 }
 
-/* Container principal para centralizar o conteúdo */
+/* Estilo do container para melhorar a legibilidade */
 .container {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Largura máxima do container */
+    width: 100%; /* Largura total */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Estilo para os títulos */
-h1, h2 {
+h1, h2, p {
     margin-top: 20px;
-    color: #333;
+    color: rgb(119,179,254);
 }
 
 /* Estilo para os formulários */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centraliza os itens do formulário */
     gap: 15px;
+    width: 100%; /* Ocupa a largura total do container */
 }
 
 /* Estilo para os inputs e botões */
@@ -47,6 +58,8 @@ input[type="file"], input[type="checkbox"], button {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 16px;
+    width: 100%; /* Ocupa a largura total do formulário */
+    max-width: 400px; /* Largura máxima para inputs e botões */
 }
 
 button {
@@ -64,6 +77,9 @@ button:hover {
 /* Estilo para as seções de exportação e limpeza de cache */
 .export-section, .cache-section {
     margin-top: 20px;
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    justify-content: center; /* Centraliza os botões */
 }
 
 /* Estilo para a mensagem de resultado */
@@ -87,6 +103,7 @@ img {
     grid-template-columns: repeat(5, 1fr); /* 5 colunas */
     gap: 10px; /* Espaçamento entre os checkboxes */
     margin-top: 10px;
+    width: 100%; /* Ocupa a largura total do container */
 }
 
 /* Estilo para cada checkbox */
@@ -94,6 +111,7 @@ img {
     display: flex;
     align-items: center;
     font-size: 14px;
+    justify-content: center; /* Centraliza o texto do checkbox */
 }
 
 /* Estilo para o checkbox */

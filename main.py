@@ -160,7 +160,7 @@ async def upload_images(request: Request, files: List[UploadFile] = File(...), c
         detect_and_save_annotations(local_image_path, output_json_path, classes)
     
     labeled_image = generate_labeled_images()
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e rotulagens salvas", "labeled_image": labeled_image})
+    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e rotulagens salvas!", "labeled_image": labeled_image})
 
 # Rota para exportar JSONs separados
 @app.get("/export_separate_jsons")
