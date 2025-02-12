@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+__pycache__/
+lib/
+Scripts/
+share/
+
+# file model YOLO8
+yolov8n.pt
