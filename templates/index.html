@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOPA - YOLO Pré-Anotações</title>
+    <title>YOLOv8 Object Detection API</title>
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', path='/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- CSS Personalizado -->
@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <img src="/static/images/logo.png" width="100">
-        <p>versão: 1.0.1</p>
+        <h1>YOLOv8 Object Detection API</h1>
         <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return handleSubmit()">
             <label for="files"><Strong>Envie seus Datasets e Selecione as classes</Strong></label><br>
             <input type="file" id="files" name="files" multiple required><br>
