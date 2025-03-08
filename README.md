@@ -39,7 +39,7 @@ venv\Scripts\activate  # Windows
 
 ### 3. Instale as dependências
 ```bash
-pip install -r requirements.txt
+pip install -r pytorch.txt -r requirements.txt
 ```
 
 ### 4. Execute o servidor FastAPI
