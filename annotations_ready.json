@@ -1,0 +1,677 @@
+[
+    {
+        "data": {
+            "image": "temp_images\\000014122619874.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 28.329524397850037,
+                            "y": 15.447938442230225,
+                            "width": 43.64497363567352,
+                            "height": 79.60264682769775,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "cat"
+                            ]
+                        },
+                        "score": 0.6866465210914612
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\000024122619875.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 24.666574597358704,
+                            "y": 5.81602081656456,
+                            "width": 57.34310448169708,
+                            "height": 93.16093698143959,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "cat"
+                            ]
+                        },
+                        "score": 0.7994371056556702
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\000034122619876.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 16.89336746931076,
+                            "y": 17.511872947216034,
+                            "width": 54.445941746234894,
+                            "height": 77.42600589990616,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "cat"
+                            ]
+                        },
+                        "score": 0.8689833879470825
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\000044122619877.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 5.7715605944395065,
+                            "y": 14.861278235912323,
+                            "width": 60.16521342098713,
+                            "height": 80.99332600831985,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "cat"
+                            ]
+                        },
+                        "score": 0.8365414142608643
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\000054122619878.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 19.491739571094513,
+                            "y": 19.040317833423615,
+                            "width": 75.741545855999,
+                            "height": 71.93232625722885,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "cat"
+                            ]
+                        },
+                        "score": 0.8379173278808594
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005003846168662.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 16.242246329784393,
+                            "y": 12.864017486572266,
+                            "width": 65.33414870500565,
+                            "height": 86.73957586288452,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.7740406394004822
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005013846168663.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 17.907266318798065,
+                            "y": 4.078970104455948,
+                            "width": 72.5120559334755,
+                            "height": 90.28991684317589,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.5255038142204285
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005023846168664.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 4.440593719482422,
+                            "y": 4.408798366785049,
+                            "width": 92.42095947265625,
+                            "height": 81.89418539404869,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8854634761810303
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005033846168665.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 5.722608417272568,
+                            "y": 21.246616542339325,
+                            "width": 94.17677894234657,
+                            "height": 74.86375719308853,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8621209263801575
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005043846168666.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 8.383755385875702,
+                            "y": 5.134525150060654,
+                            "width": 70.91730386018753,
+                            "height": 94.86547484993935,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.7141270637512207
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005053846168667.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 14.448213577270508,
+                            "y": 29.66254949569702,
+                            "width": 74.09859895706177,
+                            "height": 68.01620721817017,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8188543915748596
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005063846168668.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 20.996102690696716,
+                            "y": 15.80667495727539,
+                            "width": 60.993483662605286,
+                            "height": 84.02751088142395,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.7768981456756592
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005073846168669.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 37.61453330516815,
+                            "y": 21.854276955127716,
+                            "width": 30.41488826274872,
+                            "height": 71.87773436307907,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.899869441986084
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005083846168670.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 3.1292151659727097,
+                            "y": 17.915336787700653,
+                            "width": 89.66106660664082,
+                            "height": 75.64801722764969,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.852935254573822
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005093846168671.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 10.112390667200089,
+                            "y": 15.31636267900467,
+                            "width": 72.06753715872765,
+                            "height": 84.68363732099533,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.7525708079338074
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005103846168672.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 13.906164467334747,
+                            "y": 25.488662719726562,
+                            "width": 69.49824541807175,
+                            "height": 74.39924478530884,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.9141471982002258
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005113846168673.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 15.39938896894455,
+                            "y": 16.588954627513885,
+                            "width": 84.08247977495193,
+                            "height": 83.19165259599686,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8523423075675964
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005123846168674.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 9.303073585033417,
+                            "y": 17.903336882591248,
+                            "width": 76.56040340662003,
+                            "height": 63.04376423358917,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8506863713264465
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005133846168675.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 9.244616329669952,
+                            "y": 8.68988037109375,
+                            "width": 76.91152542829514,
+                            "height": 91.31011962890625,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8550514578819275
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005143846168676.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 4.213380813598633,
+                            "y": 7.53474235534668,
+                            "width": 78.81230115890503,
+                            "height": 92.46525764465332,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.7207476496696472
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005153846168677.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 24.324694275856018,
+                            "y": 13.090848922729492,
+                            "width": 61.47927939891815,
+                            "height": 75.57231187820435,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8108408451080322
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005163846168678.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 13.320493698120117,
+                            "y": 8.090772479772568,
+                            "width": 70.18920183181763,
+                            "height": 91.90922752022743,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8634359836578369
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005173846168679.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 36.54783368110657,
+                            "y": 37.41260766983032,
+                            "width": 41.45265221595764,
+                            "height": 62.58739233016968,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.9000101685523987
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005183846168680.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 2.275867387652397,
+                            "y": 17.55114495754242,
+                            "width": 61.816923692822456,
+                            "height": 80.61762750148773,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8579052686691284
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "data": {
+            "image": "temp_images\\005193846168681.png"
+        },
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "from_name": "label",
+                        "to_name": "image",
+                        "type": "rectangle",
+                        "value": {
+                            "x": 12.359962612390518,
+                            "y": 27.894219756126404,
+                            "width": 60.34935936331749,
+                            "height": 60.791900753974915,
+                            "rotation": 0,
+                            "rectanglelabels": [
+                                "dog"
+                            ]
+                        },
+                        "score": 0.8868266940116882
+                    }
+                ]
+            }
+        ]
+    }
+]

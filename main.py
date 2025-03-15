@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile, Form, Request
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
 import os
 import json
 import cv2
@@ -18,6 +19,15 @@ torch.serialization.add_safe_globals(["ultralytics.nn.tasks.DetectionModel"])
 model = YOLO("yolov8n.pt")
 
 app = FastAPI()
+
+# Configuração do CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # URL do frontend React
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Configuração para servir arquivos estáticos
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -91,8 +101,6 @@ def detect_and_save_annotations(image_path, output_json_path, classes: List[str]
             json.dump(label_studio_data, f, indent=4)
 
 
-import json
-
 # Função para exibir imagens anotadas (mostrando apenas as imagens rotuladas)
 def generate_labeled_images():
     image_files = sorted(os.listdir(IMAGE_DIR))
@@ -146,10 +154,10 @@ def generate_labeled_images():
     return img_base64
 
 
-# Rota inicial para carregar o formulário
-@app.get("/", response_class=HTMLResponse)
-async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request, "message": "", "labeled_image": ""})
+# Rota inicial para carregar o formulário (HTML)
+#@app.get("/", response_class=HTMLResponse)
+#async def read_root(request: Request):
+#    return templates.TemplateResponse("index.html", {"request": request, "message": "", "labeled_image": ""})
 
 # Rota para processar upload das imagens e gerar anotações
 @app.post("/upload")
@@ -160,7 +168,22 @@ async def upload_images(request: Request, files: List[UploadFile] = File(...), c
         detect_and_save_annotations(local_image_path, output_json_path, classes)
     
     labeled_image = generate_labeled_images()
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e rotulagens salvas!", "labeled_image": labeled_image})
+    
+    # Retorne um JSON em vez de um template HTML
+    return JSONResponse({
+        "message": "Imagens processadas e rotulagens salvas!",
+        "labeled_image": labeled_image
+    })
+
+# Rota para processar upload das imagens e gerar anotações (HTML)
+#@app.post("/upload")
+#async def upload_images(request: Request, files: List[UploadFile] = File(...), classes: List[str] = Form(...)):
+#    for uploaded_file in files:
+#        local_image_path = save_uploaded_file(uploaded_file, IMAGE_DIR)
+#        output_json_path = os.path.join(ANNOTATION_DIR, f"{os.path.splitext(uploaded_file.filename)[0]}.json")
+#        detect_and_save_annotations(local_image_path, output_json_path, classes)
+#   labeled_image = generate_labeled_images()
+#    return templates.TemplateResponse("index.html", {"request": request, "message": "Imagens processadas e rotulagens salvas!", "labeled_image": labeled_image})
 
 # Rota para exportar JSONs separados
 @app.get("/export_separate_jsons")
@@ -187,13 +210,31 @@ async def export_consolidated_json():
 
 # Rota para limpar cache
 @app.get("/clear_cache")
-async def clear_cache(request: Request):  # Agora o request é passado como argumento
-    for folder in [IMAGE_DIR, ANNOTATION_DIR]:
-        for file in os.listdir(folder):
-            os.remove(os.path.join(folder, file))
-    
+async def clear_cache():
+    try:
+        for folder in [IMAGE_DIR, ANNOTATION_DIR]:
+            for file in os.listdir(folder):
+                os.remove(os.path.join(folder, file))
+        
+        # Retorne um JSON com a mensagem de sucesso
+        return JSONResponse({
+            "message": "Cache limpo com sucesso!"
+        })
+    except Exception as e:
+        # Retorne um JSON com a mensagem de erro em caso de falha
+        return JSONResponse({
+            "message": f"Erro ao limpar o cache: {str(e)}"
+        }, status_code=500)
+
+# Rota para limpar cache (HTML)
+#@app.get("/clear_cache")
+#async def clear_cache(request: Request):  # Agora o request é passado como argumento
+#    for folder in [IMAGE_DIR, ANNOTATION_DIR]:
+#        for file in os.listdir(folder):
+#            os.remove(os.path.join(folder, file))
+#    
     # Passando o 'request' junto com a mensagem para o template
-    return templates.TemplateResponse("index.html", {"request": request, "message": "Cache limpo com sucesso!"})
+#    return templates.TemplateResponse("index.html", {"request": request, "message": "Cache limpo com sucesso!"})
 
 
 # Executar o servidor FastAPI
