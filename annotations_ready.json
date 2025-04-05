@@ -1,677 +1,1757 @@
 [
     {
-        "data": {
-            "image": "temp_images\\000014122619874.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 28.329524397850037,
-                            "y": 15.447938442230225,
-                            "width": 43.64497363567352,
-                            "height": 79.60264682769775,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "cat"
-                            ]
-                        },
-                        "score": 0.6866465210914612
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        145.0471649169922,
+                        79.09344482421875
+                    ],
+                    [
+                        368.5094299316406,
+                        486.65899658203125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000014122619874.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\000024122619875.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 24.666574597358704,
-                            "y": 5.81602081656456,
-                            "width": 57.34310448169708,
-                            "height": 93.16093698143959,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "cat"
-                            ]
-                        },
-                        "score": 0.7994371056556702
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        126.29286193847656,
+                        29.778026580810547
+                    ],
+                    [
+                        419.8895568847656,
+                        506.76202392578125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000024122619875.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\000034122619876.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 16.89336746931076,
-                            "y": 17.511872947216034,
-                            "width": 54.445941746234894,
-                            "height": 77.42600589990616,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "cat"
-                            ]
-                        },
-                        "score": 0.8689833879470825
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        86.4940414428711,
+                        89.6607894897461
+                    ],
+                    [
+                        365.25726318359375,
+                        486.0819396972656
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000034122619876.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\000044122619877.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 5.7715605944395065,
-                            "y": 14.861278235912323,
-                            "width": 60.16521342098713,
-                            "height": 80.99332600831985,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "cat"
-                            ]
-                        },
-                        "score": 0.8365414142608643
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        29.550390243530273,
+                        76.0897445678711
+                    ],
+                    [
+                        337.5962829589844,
+                        490.77557373046875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000044122619877.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\000054122619878.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 19.491739571094513,
-                            "y": 19.040317833423615,
-                            "width": 75.741545855999,
-                            "height": 71.93232625722885,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "cat"
-                            ]
-                        },
-                        "score": 0.8379173278808594
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        99.7977066040039,
+                        97.4864273071289
+                    ],
+                    [
+                        487.59442138671875,
+                        465.7799377441406
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000054122619878.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005003846168662.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 16.242246329784393,
-                            "y": 12.864017486572266,
-                            "width": 65.33414870500565,
-                            "height": 86.73957586288452,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.7740406394004822
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        75.03398132324219,
+                        65.2198715209961
+                    ],
+                    [
+                        491.52166748046875,
+                        490.25689697265625
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000064122619879.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005013846168663.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 17.907266318798065,
-                            "y": 4.078970104455948,
-                            "width": 72.5120559334755,
-                            "height": 90.28991684317589,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.5255038142204285
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        9.86083984375,
+                        42.15693283081055
+                    ],
+                    [
+                        512.0,
+                        463.25244140625
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000074122619880.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005023846168664.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 4.440593719482422,
-                            "y": 4.408798366785049,
-                            "width": 92.42095947265625,
-                            "height": 81.89418539404869,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8854634761810303
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        0.0,
+                        121.574462890625
+                    ],
+                    [
+                        443.36297607421875,
+                        459.3094177246094
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000084122619881.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005033846168665.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 5.722608417272568,
-                            "y": 21.246616542339325,
-                            "width": 94.17677894234657,
-                            "height": 74.86375719308853,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8621209263801575
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        131.818603515625,
+                        102.745361328125
+                    ],
+                    [
+                        495.72979736328125,
+                        471.1729431152344
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000094122619882.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005043846168666.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 8.383755385875702,
-                            "y": 5.134525150060654,
-                            "width": 70.91730386018753,
-                            "height": 94.86547484993935,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.7141270637512207
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        118.08613586425781,
+                        130.9875946044922
+                    ],
+                    [
+                        484.1644592285156,
+                        416.4878845214844
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000104122619883.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005053846168667.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 14.448213577270508,
-                            "y": 29.66254949569702,
-                            "width": 74.09859895706177,
-                            "height": 68.01620721817017,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8188543915748596
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        0.0,
+                        25.466943740844727
+                    ],
+                    [
+                        410.16424560546875,
+                        511.853271484375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000114122619884.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005063846168668.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 20.996102690696716,
-                            "y": 15.80667495727539,
-                            "width": 60.993483662605286,
-                            "height": 84.02751088142395,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.7768981456756592
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        33.582908630371094,
+                        16.152246475219727
+                    ],
+                    [
+                        482.8759765625,
+                        511.3890686035156
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000124122619885.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005073846168669.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 37.61453330516815,
-                            "y": 21.854276955127716,
-                            "width": 30.41488826274872,
-                            "height": 71.87773436307907,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.899869441986084
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        47.55781173706055,
+                        68.61885070800781
+                    ],
+                    [
+                        511.71484375,
+                        508.51397705078125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000134122619886.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005083846168670.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 3.1292151659727097,
-                            "y": 17.915336787700653,
-                            "width": 89.66106660664082,
-                            "height": 75.64801722764969,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.852935254573822
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        105.67558288574219,
+                        73.33149719238281
+                    ],
+                    [
+                        379.82867431640625,
+                        505.70050048828125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000144122619887.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005093846168671.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 10.112390667200089,
-                            "y": 15.31636267900467,
-                            "width": 72.06753715872765,
-                            "height": 84.68363732099533,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.7525708079338074
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        132.5163116455078,
+                        19.526025772094727
+                    ],
+                    [
+                        422.6487731933594,
+                        511.4371032714844
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000154122619888.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005103846168672.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 13.906164467334747,
-                            "y": 25.488662719726562,
-                            "width": 69.49824541807175,
-                            "height": 74.39924478530884,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.9141471982002258
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        55.4207649230957,
+                        50.48163986206055
+                    ],
+                    [
+                        362.4083557128906,
+                        494.54144287109375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000164122619889.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005113846168673.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 15.39938896894455,
-                            "y": 16.588954627513885,
-                            "width": 84.08247977495193,
-                            "height": 83.19165259599686,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8523423075675964
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        91.8899917602539,
+                        187.20118713378906
+                    ],
+                    [
+                        488.8609313964844,
+                        489.3802795410156
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000174122619890.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005123846168674.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 9.303073585033417,
-                            "y": 17.903336882591248,
-                            "width": 76.56040340662003,
-                            "height": 63.04376423358917,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8506863713264465
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        5.410595893859863,
+                        25.272851943969727
+                    ],
+                    [
+                        508.3160095214844,
+                        479.6234436035156
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000184122619891.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005133846168675.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 9.244616329669952,
-                            "y": 8.68988037109375,
-                            "width": 76.91152542829514,
-                            "height": 91.31011962890625,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8550514578819275
-                    }
-                ]
+                "label": "cat",
+                "points": [
+                    [
+                        82.2533187866211,
+                        1.020898461341858
+                    ],
+                    [
+                        354.2037048339844,
+                        502.02685546875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "000194122619892.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005143846168676.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 4.213380813598633,
-                            "y": 7.53474235534668,
-                            "width": 78.81230115890503,
-                            "height": 92.46525764465332,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.7207476496696472
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        83.1603012084961,
+                        65.86376953125
+                    ],
+                    [
+                        417.671142578125,
+                        509.97039794921875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005003846168662.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005153846168677.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 24.324694275856018,
-                            "y": 13.090848922729492,
-                            "width": 61.47927939891815,
-                            "height": 75.57231187820435,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8108408451080322
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        91.6852035522461,
+                        20.884326934814453
+                    ],
+                    [
+                        462.9469299316406,
+                        483.168701171875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005013846168663.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005163846168678.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 13.320493698120117,
-                            "y": 8.090772479772568,
-                            "width": 70.18920183181763,
-                            "height": 91.90922752022743,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8634359836578369
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        22.73583984375,
+                        22.573047637939453
+                    ],
+                    [
+                        495.93115234375,
+                        441.87127685546875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005023846168664.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005173846168679.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 36.54783368110657,
-                            "y": 37.41260766983032,
-                            "width": 41.45265221595764,
-                            "height": 62.58739233016968,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.9000101685523987
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        29.299755096435547,
+                        108.78267669677734
+                    ],
+                    [
+                        511.48486328125,
+                        492.0851135253906
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005033846168665.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005183846168680.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 2.275867387652397,
-                            "y": 17.55114495754242,
-                            "width": 61.816923692822456,
-                            "height": 80.61762750148773,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8579052686691284
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        42.924827575683594,
+                        26.288768768310547
+                    ],
+                    [
+                        406.02142333984375,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005043846168666.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     },
     {
-        "data": {
-            "image": "temp_images\\005193846168681.png"
-        },
-        "annotations": [
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
             {
-                "result": [
-                    {
-                        "from_name": "label",
-                        "to_name": "image",
-                        "type": "rectangle",
-                        "value": {
-                            "x": 12.359962612390518,
-                            "y": 27.894219756126404,
-                            "width": 60.34935936331749,
-                            "height": 60.791900753974915,
-                            "rotation": 0,
-                            "rectanglelabels": [
-                                "dog"
-                            ]
-                        },
-                        "score": 0.8868266940116882
-                    }
-                ]
+                "label": "dog",
+                "points": [
+                    [
+                        73.974853515625,
+                        151.87225341796875
+                    ],
+                    [
+                        453.35968017578125,
+                        500.115234375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
             }
+        ],
+        "imagePath": "005053846168667.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        107.50004577636719,
+                        80.93017578125
+                    ],
+                    [
+                        419.78668212890625,
+                        511.1510314941406
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005063846168668.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        192.58641052246094,
+                        111.8938980102539
+                    ],
+                    [
+                        348.3106384277344,
+                        479.90789794921875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005073846168669.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        16.021581649780273,
+                        91.72652435302734
+                    ],
+                    [
+                        475.08624267578125,
+                        479.04437255859375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005083846168670.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        51.77544021606445,
+                        78.4197769165039
+                    ],
+                    [
+                        420.76123046875,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005093846168671.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        71.1995620727539,
+                        130.501953125
+                    ],
+                    [
+                        427.03057861328125,
+                        511.42608642578125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005103846168672.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        78.8448715209961,
+                        84.9354476928711
+                    ],
+                    [
+                        509.34716796875,
+                        510.876708984375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005113846168673.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        47.631736755371094,
+                        91.66508483886719
+                    ],
+                    [
+                        439.6210021972656,
+                        414.44915771484375
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005123846168674.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        47.332435607910156,
+                        44.4921875
+                    ],
+                    [
+                        441.11944580078125,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005133846168675.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        21.572509765625,
+                        38.577880859375
+                    ],
+                    [
+                        425.09149169921875,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005143846168676.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        124.54243469238281,
+                        67.025146484375
+                    ],
+                    [
+                        439.31634521484375,
+                        453.95538330078125
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005153846168677.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        68.200927734375,
+                        41.42475509643555
+                    ],
+                    [
+                        427.56964111328125,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005163846168678.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        187.12490844726562,
+                        191.55255126953125
+                    ],
+                    [
+                        399.36248779296875,
+                        512.0
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005173846168679.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        11.652441024780273,
+                        89.86186218261719
+                    ],
+                    [
+                        328.15509033203125,
+                        502.6241149902344
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005183846168680.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
+        ]
+    },
+    {
+        "version": "3.18.0",
+        "flags": {},
+        "shapes": [
+            {
+                "label": "dog",
+                "points": [
+                    [
+                        63.28300857543945,
+                        142.8184051513672
+                    ],
+                    [
+                        372.271728515625,
+                        454.07293701171875
+                    ]
+                ],
+                "group_id": null,
+                "shape_type": "rectangle",
+                "flags": {},
+                "line_color": [
+                    1,
+                    70,
+                    234,
+                    255
+                ],
+                "fill_color": null
+            }
+        ],
+        "imagePath": "005193846168681.png",
+        "imageData": null,
+        "imageHeight": 512,
+        "imageWidth": 512,
+        "lineColor": [
+            0,
+            255,
+            0,
+            128
+        ],
+        "fillColor": [
+            255,
+            0,
+            0,
+            128
         ]
     }
 ]

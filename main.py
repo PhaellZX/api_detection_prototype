@@ -13,6 +13,7 @@ from typing import List
 import zipfile
 import io
 import base64
+from typing import List, Optional
 
 # Configuração do YOLO
 torch.serialization.add_safe_globals(["ultralytics.nn.tasks.DetectionModel"])
@@ -49,56 +50,80 @@ def save_uploaded_file(uploaded_file: UploadFile, save_dir: str):
     return file_path
 
 # Função para detecção e salvamento das anotações
-def detect_and_save_annotations(image_path, output_json_path, classes: List[str], confidence_threshold=0.5):
+def detect_and_save_annotations(image_path, output_json_path, classes: List[str], confidence_threshold=0.5, base_path: Optional[str] = None, annotation_format: str = "label_studio"):
     image = cv2.imread(image_path)
     results = model(image, conf=confidence_threshold)
     image_name = os.path.basename(image_path)
-    image_url = image_path  
+    image_url = os.path.join(base_path, image_name).replace('\\', '/') if base_path else image_path.replace('\\', '/')
 
     result_annotations = []
+
     for box in results[0].boxes:
         x_min, y_min, x_max, y_max = box.xyxy[0].tolist()
         conf = float(box.conf[0])
         class_id = int(box.cls[0])
         class_name = model.names[class_id]
 
-        # Verifica se a classe detectada está na lista de classes selecionadas
         if class_name in classes and conf >= confidence_threshold:
             img_height, img_width = image.shape[:2]
-            x = (x_min / img_width) * 100
-            y = (y_min / img_height) * 100
-            width = ((x_max - x_min) / img_width) * 100
-            height = ((y_max - y_min) / img_height) * 100
+            if annotation_format == "label_studio":
+                x = (x_min / img_width) * 100
+                y = (y_min / img_height) * 100
+                width = ((x_max - x_min) / img_width) * 100
+                height = ((y_max - y_min) / img_height) * 100
 
-            result_annotations.append({
-                "from_name": "label",
-                "to_name": "image",
-                "type": "rectangle",
-                "value": {
-                    "x": x,
-                    "y": y,
-                    "width": width,
-                    "height": height,
-                    "rotation": 0,
-                    "rectanglelabels": [class_name]
-                },
-                "score": conf
-            })
+                result_annotations.append({
+                    "from_name": "label",
+                    "to_name": "image",
+                    "type": "rectangle",
+                    "value": {
+                        "x": x,
+                        "y": y,
+                        "width": width,
+                        "height": height,
+                        "rotation": 0,
+                        "rectanglelabels": [class_name]
+                    },
+                    "score": conf
+                })
+            else:  # formato labelme
+                result_annotations.append({
+                    "label": class_name,
+                    "points": [[x_min, y_min], [x_max, y_max]],
+                    "group_id": None,
+                    "shape_type": "rectangle",
+                    "flags": {},
+                    "line_color": [1, 70, 234, 255],
+                    "fill_color": None
+                })
 
-    label_studio_data = {
-        "data": {
-            "image": image_url
-        },
-        "annotations": [
-            {
-                "result": result_annotations
-            }
-        ]
-    }
+    if annotation_format == "label_studio":
+        label_data = {
+            "data": {
+                "image": image_url
+            },
+            "annotations": [
+                {
+                    "result": result_annotations
+                }
+            ]
+        }
+    else:
+        label_data = {
+            "version": "3.18.0",
+            "flags": {},
+            "shapes": result_annotations,
+            "imagePath": image_name,
+            "imageData": None,
+            "imageHeight": image.shape[0],
+            "imageWidth": image.shape[1],
+            "lineColor": [0, 255, 0, 128],
+            "fillColor": [255, 0, 0, 128]
+        }
 
     if result_annotations:
         with open(output_json_path, 'w') as f:
-            json.dump(label_studio_data, f, indent=4)
+            json.dump(label_data, f, indent=4)
 
 
 # Função para exibir imagens anotadas (mostrando apenas as imagens rotuladas)
@@ -161,19 +186,33 @@ def generate_labeled_images():
 
 # Rota para processar upload das imagens e gerar anotações
 @app.post("/upload")
-async def upload_images(request: Request, files: List[UploadFile] = File(...), classes: List[str] = Form(...)):
+async def upload_images(
+    request: Request,
+    files: List[UploadFile] = File(...),
+    classes: List[str] = Form(...),
+    base_path: Optional[str] = Form(None),
+    annotation_format: str = Form("label_studio")
+):
     for uploaded_file in files:
         local_image_path = save_uploaded_file(uploaded_file, IMAGE_DIR)
         output_json_path = os.path.join(ANNOTATION_DIR, f"{os.path.splitext(uploaded_file.filename)[0]}.json")
-        detect_and_save_annotations(local_image_path, output_json_path, classes)
+        
+        # Aqui agora passa o base_path pra função
+        detect_and_save_annotations(
+            image_path=local_image_path,
+            output_json_path=output_json_path,
+            classes=classes,
+            base_path=base_path,
+            annotation_format=annotation_format
+        )
     
     labeled_image = generate_labeled_images()
-    
-    # Retorne um JSON em vez de um template HTML
+
     return JSONResponse({
         "message": "Imagens processadas e rotulagens salvas!",
         "labeled_image": labeled_image
     })
+
 
 # Rota para processar upload das imagens e gerar anotações (HTML)
 #@app.post("/upload")
