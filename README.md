@@ -1,4 +1,4 @@
-# YOLOv8 Object Detection API
+# Adaptlabelx Object Detection API
 
 Este projeto é uma API desenvolvida com FastAPI para detecção de objetos em imagens utilizando o modelo YOLOv8. A API permite o upload de imagens, processamento com YOLOv8 e exportação dos resultados em formato JSON compatível com Label Studio.
 
