@@ -1,89 +1,88 @@
 # Prototype Object Detection API
 
-Este projeto é uma API desenvolvida com FastAPI para detecção de objetos em imagens utilizando o modelo YOLOv8. A API permite o upload de imagens, processamento com YOLOv8 e exportação dos resultados em formato JSON compatível com Label Studio.
+This project is an API developed with FastAPI for object detection in images using the YOLOv8 model. The API allows image uploads, processing with YOLOv8, and exporting results in a JSON format compatible with Label Studio.
 
-## Funcionalidades
+## Features
 
-- Upload de imagens para detecção de objetos.
-- Processamento das imagens utilizando o modelo YOLOv8.
-- Geração de anotações no formato JSON.
-- Exportação de anotações separadas ou consolidadas em um único JSON.
-- Exibição de imagens rotuladas.
-- Limpeza do cache de imagens e anotações.
+- Upload images for object detection.
+- Process images using the YOLOv8 model.
+- Generate annotations in JSON format.
+- Export annotations separately or consolidated in a single JSON file.
+- Display labeled images.
+- Clear cache of images and annotations.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de executar o projeto, instale os seguintes softwares:
+Before running the project, install the following software:
 
 - Python 3.8+
 - Git
-- Pip (gerenciador de pacotes do Python)
-- Virtualenv (opcional, mas recomendado)
+- Pip (Python package manager)
+- Virtualenv (optional but recommended)
 
-## Instalação e Execução
+## Installation and Execution
 
-Siga os passos abaixo para configurar e executar a API:
+Follow the steps below to set up and run the API:
 
-### 1. Clone o repositório
+### 1. Clone the repository
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
 
-### 2. Crie um ambiente virtual (opcional, mas recomendado)
+### 2. Create a virtual environment (optional but recommended)
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate  # Windows
 ```
 
-### 3. Instale as dependências
+### 3. Install dependencies
 ```bash
 pip install -r pytorch.txt -r requirements.txt
 ```
 
-### 4. Execute o servidor FastAPI
+### 4. Run the FastAPI server
 ```bash
 python main.py
 ```
 
-A API será iniciada e estará disponível em: `http://127.0.0.1:8000`
+The API will start and be available at: `http://127.0.0.1:8000`
 
-## Uso da API
+## Using the API
 
-### 1. Acesse a interface web
-Abra no navegador: `http://127.0.0.1:8000` para acessar a página de upload de imagens.
+### 1. Access the web interface
+Open in your browser: `http://127.0.0.1:8000` to access the image upload page.
 
-### 2. Envio de Imagens
-- Selecione imagens para upload.
-- Informe as classes desejadas para detecção.
-- Clique no botão para processar as imagens.
+### 2. Uploading Images
+- Select images to upload.
+- Specify the desired classes for detection.
+- Click the button to process the images.
 
-### 3. Exportação dos Resultados
-A API permite exportar anotações:
-- **JSONs separados:** `GET /export_separate_jsons` (gera um arquivo ZIP com todos os JSONs)
-- **JSON consolidado:** `GET /export_consolidated_json` (gera um único JSON com todas as anotações)
+### 3. Exporting Results
+The API allows exporting annotations:
+- **Separate JSONs:** `GET /export_separate_jsons` (generates a ZIP file with all JSON files)
+- **Consolidated JSON:** `GET /export_consolidated_json` (generates a single JSON file with all annotations)
 
-### 4. Limpeza do Cache
-Para limpar imagens e anotações processadas, acesse: `GET /clear_cache`
+### 4. Clearing the Cache
+To clear processed images and annotations, access: `GET /clear_cache`
 
-## Estrutura do Projeto
+## Project Structure
 ```
-├── main.py               # Código principal da API
-├── requirements.txt      # Dependências do projeto
-├── templates/            # Arquivos HTML para interface web
-├── static/               # Arquivos estáticos (CSS, JS, etc.)
-├── temp_images/          # Pasta onde imagens são salvas temporariamente
-├── temp_annotations/     # Pasta onde anotações JSON são armazenadas
-└── README.md             # Documentação do projeto
+├── main.py               # Main API code
+├── requirements.txt      # Project dependencies
+├── templates/            # HTML files for the web interface
+├── static/               # Static files (CSS, JS, etc.)
+├── temp_images/          # Folder where images are temporarily stored
+├── temp_annotations/     # Folder where JSON annotations are stored
+└── README.md             # Project documentation
 ```
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **FastAPI**: Framework para construção de APIs rápidas e eficientes.
-- **YOLOv8 (Ultralytics)**: Modelo de detecção de objetos.
-- **OpenCV**: Processamento de imagens.
-- **Matplotlib**: Visualização das detecções.
-- **Jinja2**: Renderização de templates HTML.
-- **Uvicorn**: Servidor ASGI para FastAPI.
-
+- **FastAPI**: Framework for building fast and efficient APIs.
+- **YOLOv8 (Ultralytics)**: Object detection model.
+- **OpenCV**: Image processing.
+- **Matplotlib**: Detection visualization.
+- **Jinja2**: HTML template rendering.
+- **Uvicorn**: ASGI server for FastAPI.
